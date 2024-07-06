@@ -852,7 +852,7 @@ void CNEORules::StartNextRound()
 {
 	if (GetGlobalTeam(TEAM_JINRAI)->GetNumPlayers() == 0 || GetGlobalTeam(TEAM_NSF)->GetNumPlayers() == 0)
 	{
-		UTIL_CenterPrintAll("Waiting for players on both teams.\n"); // NEO TODO (Rain): actual message
+		UTIL_CenterPrintAll("- NEW ROUND START DELAYED - ONE OR BOTH TEAMS HAS NO PLAYERS -\n"); // NEO TODO (Rain): actual message
 		SetRoundStatus(NeoRoundStatus::Idle);
 		m_flNeoNextRoundStartTime = gpGlobals->curtime + 10.0f;
 		return;
@@ -2077,7 +2077,7 @@ void CNEORules::SetRoundStatus(NeoRoundStatus status)
 #ifdef GAME_DLL
 		if (status == NeoRoundStatus::RoundLive)
 		{
-			UTIL_CenterPrintAll("GO GO GO\n"); // NEO TODO (Rain): correct phrase
+			UTIL_CenterPrintAll("- GO! GO! GO! -\n"); // NEO TODO (Rain): correct phrase
 		}
 #endif
 	}
