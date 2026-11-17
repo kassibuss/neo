@@ -2363,6 +2363,9 @@ typedef enum
 	ACT_MP_CYOA_PDA_IDLE,
 	ACT_MP_CYOA_PDA_OUTRO,
 
+	// Neotokyo
+	ACT_VM_CHANGEMODE,
+	ACT_VM_MELEEATTACK1,
 
 	// this is the end of the global activities, private per-monster activities start here.
 	LAST_SHARED_ACTIVITY,
